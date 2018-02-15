@@ -13,9 +13,9 @@ namespace CSharp7
             "2. Locais e retornos de Ref",
             "3. Parâmetros in",
             "4. Argumentos Nomeados",
-            ////AULA 2 - TUPLAS
-            //"5. Tuplas",
-            //"6. Descartes",
+            //AULA 2 - TUPLAS
+            "5. Tuplas",
+            "6. Descartes",
             ////AULA 3 - MELHORIAS EM CONDICIONAIS
             //"7. Correspondência de Padrões",
             //"8. Expressões Throw",

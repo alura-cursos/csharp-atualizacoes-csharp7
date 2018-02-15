@@ -54,6 +54,10 @@
     <Compile Include="Aula1\R03.ParametrosIn\depois\MenuItem.cs" />
     <Compile Include="Aula1\R04.ArgumentosNomeados\antes\MenuItem.cs" />
     <Compile Include="Aula1\R04.ArgumentosNomeados\depois\MenuItem.cs" />
+    <Compile Include="Aula2\R05.Tuplas\antes\Cidades.cs" />
+    <Compile Include="Aula2\R05.Tuplas\depois\Cidades.cs" />
+    <Compile Include="Aula2\R06.Descartes\antes\Cidades.cs" />
+    <Compile Include="Aula2\R06.Descartes\depois\Cidades.cs" />
     <Compile Include="MenuItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
