@@ -58,6 +58,10 @@
     <Compile Include="Aula2\R05.Tuplas\depois\Cidades.cs" />
     <Compile Include="Aula2\R06.Descartes\antes\Cidades.cs" />
     <Compile Include="Aula2\R06.Descartes\depois\Cidades.cs" />
+    <Compile Include="Aula3\R07.CorrespondenciaDePadroes\antes\Calculadora.cs" />
+    <Compile Include="Aula3\R07.CorrespondenciaDePadroes\depois\Calculadora.cs" />
+    <Compile Include="Aula3\R08.ExpressoesThrow\antes\AluraMovies.cs" />
+    <Compile Include="Aula3\R08.ExpressoesThrow\depois\AluraMovies.cs" />
     <Compile Include="MenuItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
