@@ -16,9 +16,8 @@ namespace csharp7.R01.depois
                 while ((linha = streamReader.ReadLine()) != null)
                 {
                     string[] campos = linha.Split(',');
-                    int id = 0;
-                    int.TryParse(campos[0], out id);
-                    if (id > 0)
+
+                    if (int.TryParse(campos[0], out var id))
                     {
                         Cliente cliente = new Cliente(id, campos[1], campos[2], campos[3]);
 
@@ -30,6 +29,8 @@ namespace csharp7.R01.depois
                         WriteLine("Website: " + cliente.Website);
                         WriteLine("================");
                     }
+
+                    Console.WriteLine($"Valor do ID: {id}");
                 }
             }
         }

@@ -23,12 +23,9 @@ namespace csharp7.R04.depois
             //desde que sejam usados em sua posição correta.
             ImprimirDetalhesDoPedido("Maria de Fátima", 31, nomeProduto: "Caneca Vermelha");
 
-            // As 2 linhas abaixo geram erro de compilação:
-
-            ////Error CS1738  Named argument specifications must appear after all fixed arguments have been specified.
-            //ImprimirDetalhesDoPedido(vendedor: "Maria de Fátima", 31, nomeProduto: "Caneca Vermelha"); // somente a partir do C# 7.2
-            ////Error CS1738  Named argument specifications must appear after all fixed arguments have been specified.
-            //ImprimirDetalhesDoPedido("Maria de Fátima", numeroPedido: 31, "Caneca Vermelha"); // somente a partir do C# 7.2
+            // As 2 linhas abaixo geravam erro de compilação ANTES DO C# 7.2:
+            ImprimirDetalhesDoPedido(vendedor: "Maria de Fátima", 31, nomeProduto: "Caneca Vermelha"); // somente a partir do C# 7.2
+            ImprimirDetalhesDoPedido("Maria de Fátima", numeroPedido: 31, "Caneca Vermelha"); // somente a partir do C# 7.2
         }
 
         void ImprimirDetalhesDoPedido(string vendedor, int numeroPedido, string nomeProduto)
