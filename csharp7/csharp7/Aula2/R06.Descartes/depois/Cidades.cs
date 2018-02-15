@@ -32,7 +32,7 @@ namespace csharp7.R06.depois
                 string linha;
                 while ((linha = streamReader.ReadLine()) != null)
                 {
-                    var (estado, nome, latitude, longitude, capital) = LerLinha(linha);
+                    var (estado, nome, _, _, capital) = LerLinha(linha);
                     cidades.Add(new Cidade(estado, nome, capital));
                 }
             }
