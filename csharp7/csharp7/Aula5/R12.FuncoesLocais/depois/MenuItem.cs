@@ -31,19 +31,20 @@ namespace csharp7.R12.depois
             if (fim <= inicio)
                 throw new ArgumentException($"{nameof(fim)} deve ser maior que {nameof(inicio)}");
 
-            return ImplementacaoSubconjuntoDoAlfabeto(inicio, fim);
+            return ImplementacaoSubconjuntoDoAlfabeto();
+
+            IEnumerable<char> ImplementacaoSubconjuntoDoAlfabeto()
+            {
+                for (var c = inicio; c < fim; c++)
+                    yield return c;
+            }
         }
 
-        private static IEnumerable<char> ImplementacaoSubconjuntoDoAlfabeto(char inicio, char fim)
-        {
-            for (var c = inicio; c < fim; c++)
-                yield return c;
-        }
     }
 
     class Tarefas
     {
-        public Task<string> ExecutarTrabalhoDemorado(string endereco, int indice, string nome)
+        public async Task<string> ExecutarTrabalhoDemorado(string endereco, int indice, string nome)
         {
             if (string.IsNullOrWhiteSpace(endereco))
                 throw new ArgumentException(message: "Endereço obrigatório", paramName: nameof(endereco));
@@ -52,14 +53,14 @@ namespace csharp7.R12.depois
             if (string.IsNullOrWhiteSpace(nome))
                 throw new ArgumentException(message: "Nome obrigatório", paramName: nameof(nome));
 
-            return ImplementacaoTrabalhoDemorado(endereco, indice, nome);
-        }
+            return await funcao();
 
-        private static async Task<string> ImplementacaoTrabalhoDemorado(string endereco, int indice, string nome)
-        {
-            var primeiroResultado = await PrimeiroPasso(endereco);
-            var segundoResultado = await SegundoPasso(indice, nome);
-            return $"Os resultados são {primeiroResultado} e {segundoResultado}.";
+            async Task<string> funcao()
+            {
+                var primeiroResultado = await PrimeiroPasso(endereco);
+                var segundoResultado = await SegundoPasso(indice, nome);
+                return $"Os resultados são {primeiroResultado} e {segundoResultado}.";
+            }
         }
 
         private static Task<int> SegundoPasso(int index, string name)
