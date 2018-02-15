@@ -68,12 +68,19 @@
     <Compile Include="Aula4\R10.AsyncMain\depois\MenuItem.cs" />
     <Compile Include="Aula4\R11.ExpressaoLiteralPadrao\antes\MenuItem.cs" />
     <Compile Include="Aula4\R11.ExpressaoLiteralPadrao\depois\MenuItem.cs" />
+    <Compile Include="Aula5\R12.FuncoesLocais\antes\MenuItem.cs" />
+    <Compile Include="Aula5\R12.FuncoesLocais\depois\MenuItem.cs" />
+    <Compile Include="Aula5\R13.MaisMembrosComCorpoDeExpressao\antes\AluraMovies.cs" />
+    <Compile Include="Aula5\R13.MaisMembrosComCorpoDeExpressao\depois\AluraMovies.cs" />
+    <Compile Include="Aula5\R14.EstiloDeCodigo\antes\Clientes.cs" />
+    <Compile Include="Aula5\R14.EstiloDeCodigo\depois\Clientes.cs" />
     <Compile Include="MenuItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="Aula5\R14.EstiloDeCodigo\EstiloDeCodigo.txt" />
     <Content Include="cidades.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
